@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="site-info">
+        <div class="imgcontainer">
+          <img
+            src="https://cdn.pixabay.com/photo/2021/11/11/12/41/facebook-6786210_1280.png"
+            alt="Avatar"
+            class="avatar"
+          />
+          <p class="fcb-txt">
+            Facebook помогает вам всегда <br />оставаться на связи и общаться
+            со<br />
+            своими знакомыми.
+          </p>
+        </div>
+      </div>
+
+      <form action="action_page.php" method="post" class="login-form">
+        <input
+          type="text"
+          placeholder="Электронный адресс или номер телефона"
+          name="uname"
+          required
+        />
+
+        <input type="password" placeholder="Пароль" name="psw" required />
+
+        <button type="submit">Вход</button>
+
+        <span class="psw"><a href="#">Забыли пароль?</a></span>
+
+        <div class="line"><hr /></div>
+
+        <button type="button" class="register-button">Создать аккаунт</button>
+      </form>
+    </div>
+
+    <div class="add-info">
+      <p>
+        <strong>Создать Страницу</strong> знаменитости, музыкальной группы
+        <br />
+        или компании.
+      </p>
+    </div>
+  </body>
+</html>
