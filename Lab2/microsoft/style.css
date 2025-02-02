@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.top-nav {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.user-actions a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Баннер */
+.banner {
+  background-color: #0078d4;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Главный баннер */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background-color: #f5f5f5;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.hero img {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+}
+
+.search {
+  width: 20px;
+}
+
+.cart {
+  width: 20px;
+}
+
+.signin {
+  width: 20px;
+}
+
+/* Категории */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.categories a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0078d4;
+  font-size: 16px;
+}
+
+/* Продукты */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 50px 100px;
+  background-color: #f9f9f9;
+}
+
+.products article {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.products img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.products h2 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+}
+
+.products p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.products .btn {
+  font-size: 14px;
+}
