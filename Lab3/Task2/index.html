@@ -6,21 +6,18 @@
     <title>ToDo List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
-  <div class="banner"><h6>ToDo List</h6></div>
-
-  <div class="name"><h1>ToDo List</h1></div>
-
-  <div class="menu">
-    <form action="">
-      <fieldset>
-        <input type="text" placeholder="New task" />
-
-        <button class="add-button">Add</button>
-      </fieldset>
-    </form>
-  </div>
-
-  <div class="tasks"></div>
-  <script src="script.js"></script>
+  <body>
+    <div class="banner"><h2>ToDo List</h6></div>
+    <div class="name"><h1>ToDo List</h1></div>
+    <div class="menu">
+      <form id="taskForm">
+        <fieldset>
+          <input type="text" id="newTask" placeholder="New task" />
+          <button type="submit" class="add-button">Add</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="tasks" id="tasks"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
