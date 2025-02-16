@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // ✅ Import CommonModule
+import { CommonModule } from '@angular/common';
 
 interface Product {
   image: string;
@@ -12,7 +12,7 @@ interface Product {
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule], // ✅ Add CommonModule here
+  imports: [CommonModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
 })
