@@ -1,0 +1,97 @@
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid lightgray;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  box-sizing: border-box;
+}
+
+.product-name {
+  font-weight: bold;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-description {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.rating {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  padding-bottom: 10px;
+}
+
+.kaspi-button {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f04b4b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.kaspi-button:hover {
+  background-color: #a20000;
+}
+
+.sharing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.share-whatsapp {
+  background-color: #00a90e;
+}
+
+.share-tg {
+  background-color: #307ef2;
+}

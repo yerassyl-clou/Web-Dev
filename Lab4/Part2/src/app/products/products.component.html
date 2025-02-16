@@ -1,0 +1,21 @@
+<h2>Products I sell:</h2>
+<div class="product-list">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name" />
+
+    <div class="product-content">
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="rating">{{ product.rating }} ⭐</p>
+      <a [href]="product.link" target="_blank" class="kaspi-button">Kaspi</a>
+      <div class="sharing">
+        <button class="share-whatsapp" (click)="shareOnWhatsApp(product)">
+          Share on WhatsApp
+        </button>
+        <button class="share-tg" (click)="shareOnTelegram(product)">
+          Share on Telegram
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
