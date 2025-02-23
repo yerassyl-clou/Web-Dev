@@ -1,9 +1,24 @@
-<div class="product">
-  <img [src]="product.image" [alt]="product.name" />
-  <h3>{{ product.name }}</h3>
-  <p>{{ product.description }}</p>
-  <p>Rating: {{ product.rating }}</p>
-  <p>Likes: {{ product.likes }}</p>
+<div class="product-item">
+  <img class="product-image" [src]="product.image" [alt]="product.name" />
 
-  <button (click)="likeProduct()">❤️ Like</button>
+  <div class="product-content">
+    <h3 class="product-title">{{ product.name }}</h3>
+    <p class="product-description">{{ product.description }}</p>
+    <p>Rating: {{ product.rating }}</p>
+    <p>Likes: {{ product.likes }}</p>
+
+    <div class="product-actions">
+      <button class="like-button" (click)="likeProduct()">❤️ Like</button>
+      <a class="link-button" [href]="product.link" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="sharing">
+    <button class="share-whatsapp" (click)="shareOnWhatsApp(product)">
+      Share on WhatsApp
+    </button>
+    <button class="share-telegram" (click)="shareOnTelegram(product)">
+      Share on Telegram
+    </button>
+  </div>
 </div>
