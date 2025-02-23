@@ -1,0 +1,13 @@
+<div>
+  <h1>Product Store</h1>
+  <div>
+    <button
+      *ngFor="let category of categories"
+      (click)="filterProducts(category.id)"
+    >
+      {{ category.name }}
+    </button>
+    <button (click)="filterProducts(null)">All</button>
+  </div>
+  <app-product-list [products]="filteredProducts"></app-product-list>
+</div>
