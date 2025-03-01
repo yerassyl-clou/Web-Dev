@@ -10,6 +10,8 @@
     <div class="product-actions">
       <button class="like-button" (click)="likeProduct()">❤️ Like</button>
       <a class="link-button" [href]="product.link" target="_blank">Buy Now</a>
+      <button (click)="openDescription()">Description</button>
+      <a routerLink="/description/${this.product.id}">desc</a>
     </div>
   </div>
 
