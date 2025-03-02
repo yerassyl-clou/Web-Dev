@@ -1,5 +1,26 @@
-<div *ngIf="album">
-  <h2>Album {{ album.id }}</h2>
-  <p>Title: {{ album.title }}</p>
-  <a routerLink="/albums">Back to albums</a>
+<div *ngIf="album; else noAlbums">
+  <h2>Album Details</h2>
+  <p><strong>ID:</strong> {{ album.id }}</p>
+
+  <div *ngIf="isEditing">
+    <input type="text" [(ngModel)]="editedTitle" />
+    <button (click)="saveTitle()" class="saveButton">Save</button>
+  </div>
+
+  <div *ngIf="!isEditing">
+    <p><strong>Title:</strong> {{ album.title }}</p>
+    <button (click)="toggleEdit()" class="editButton">Edit</button>
+  </div>
+
+  <div class="links">
+    <a [routerLink]="['/albums', album.id, 'photos']" class="photosLink"
+      >photos</a
+    >
+    <br />
+    <a routerLink="/albums" class="backLink">back</a>
+  </div>
 </div>
+
+<ng-template #noAlbums>
+  <p>Cant access albums</p>
+</ng-template>

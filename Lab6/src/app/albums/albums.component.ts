@@ -37,9 +37,9 @@ export class AlbumsComponent {
   }
 
   addAlbums() {
-    this.albumsService.addAlbum(this.newAlbum).subscribe((post) => {
-      console.log(post);
-      this.albums.unshift(post);
+    this.albumsService.addAlbum(this.newAlbum).subscribe((album) => {
+      console.log(album);
+      this.albums.unshift(album);
     });
   }
 }

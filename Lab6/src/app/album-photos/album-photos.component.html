@@ -1,1 +1,9 @@
-<p>album-photos works!</p>
+<h2>Photos</h2>
+<div *ngIf="photos.length > 0">
+  <div *ngFor="let photo of photos" class="photoCard">
+    <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+
+<a [routerLink]="['/albums', albumId]" class="backLink">Back</a>
