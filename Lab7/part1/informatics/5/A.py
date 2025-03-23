@@ -1,9 +1,4 @@
-a = list()
 n = int(input())
-
-for i in range(n):
-    a.append(int(input()))
-
-for i in range(n):
-    if(n%2==0):
-        print(a[i])
+a = [i for i in input().split()]
+for i in range(0, n, 2):
+    print(a[i], end=' ')

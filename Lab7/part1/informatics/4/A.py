@@ -1,4 +1,5 @@
-a = int(input())
-
-for i in range(int(a**0.5)):
-    print((1 + i)**2)
+i = 1
+n = int(input())
+while i ** 2 <= n:
+    print(i ** 2)
+    i += 1 
