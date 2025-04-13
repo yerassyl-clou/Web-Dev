@@ -1,0 +1,4 @@
+<h3 *ngIf="!loaded">Loading...</h3>
+<ul *ngIf="loaded">
+  <li *ngFor="let company of companies"><a [routerLink]="['/companies', company.id, 'vacancies']">{{company.name}}</a></li>
+</ul>

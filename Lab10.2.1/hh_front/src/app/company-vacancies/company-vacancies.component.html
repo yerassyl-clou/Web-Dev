@@ -1,0 +1,14 @@
+<h2>Company id: {{companyId}}</h2>
+
+<div *ngIf="vacancies && vacancies.length; else noVacancies">
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      <h3>{{ vacancy.name }}</h3>
+      <p>{{ vacancy.description }}</p>
+      <p><strong>Salary:</strong> {{ vacancy.salary }}</p>
+    </li>
+  </ul>
+</div>
+<ng-template #noVacancies>
+  <p>No vacancies found for this company.</p>
+</ng-template>
