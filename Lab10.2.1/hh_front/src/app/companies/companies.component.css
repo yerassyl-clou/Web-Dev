@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #00a5d2;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #5b80b2;
+}

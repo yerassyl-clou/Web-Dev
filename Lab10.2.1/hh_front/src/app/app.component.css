@@ -1,0 +1,22 @@
+ul {
+  background-color: #f0f0f0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+li a{
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: #007bff;
+}
+
+router-outlet {
+  display: block;
+  margin-top: 20px;
+}
